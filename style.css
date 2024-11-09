@@ -64,6 +64,7 @@ nav{
     gap:10px;
     animation: slideUpFromBottom 0.8s ease-out;
   opacity: 1;
+  padding: 10px;
 }
 .text{
     color: var(--secoandary-color);
@@ -117,7 +118,7 @@ img{
   opacity: 1;
 }
 .about-section{
-    height: 70svh;
+    height: auto;
 
     background-color: var(--background-color);
     display: flex;
@@ -226,7 +227,7 @@ img{
 
     .about-content {
         text-align: center;
-        margin-top: 2rem;
+        
     }
 }
 .about-section .actions {
@@ -395,6 +396,7 @@ img{
     padding: 20px;
     background-color: var(--background-color);
     border-radius: 8px;
+    margin-top: 10px;
 
   }
 
@@ -554,28 +556,30 @@ img{
       width:100vw;
     }
     .box{
-      height: 90svh;
+    
      padding: 0%;
       gap:20px;
     }
     .about-section{
-      height:90svh;
+      height:auto;
     }
+    
     .hero-nav{
-      gap:50px;
+      gap:100px;
       height:70svh;
     }
     .about-img{
       display: none;
     }
     .about-container{
-      height: 70svh;
+      height: auto;
     }
     .about{
-      height:100vw;
+      height:auto;
     }
     #myexperiance{
       padding: 2px;
+     
     }
     .timeline {
       padding-left: 7px;
@@ -601,13 +605,15 @@ img{
     }
   }
   @media only screen and (max-width:1254px){
-    .about-img{
-      display: none;
-    }
+   
     .box{
       width:100vw;
     }
-    .hero-nav .box img{
+    .box img{
       display: none;
     }
+    .about .box img{
+      display: block;
+    }
+    
   }
