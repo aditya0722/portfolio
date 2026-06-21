@@ -36,3 +36,40 @@ if (isDarkTheme) {
 
 // Add event listener to the toggle button
 themeToggle.addEventListener('click', toggleTheme);
+
+// Handle Scroll Interaction for Pill Navbar
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  if (window.scrollY > 40) {
+    header.classList.add('header-scrolled');
+  } else {
+    header.classList.remove('header-scrolled');
+  }
+});
+
+// Mobile Navigation Dropdown Toggle Logic
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const menuIcon = document.getElementById('menu-icon');
+
+if (mobileMenuToggle && navMenu) {
+  mobileMenuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    
+    // Toggle the hamburger icon to close icon
+    if (navMenu.classList.contains('active')) {
+      menuIcon.classList.replace('fa-bars', 'fa-xmark');
+    } else {
+      menuIcon.classList.replace('fa-xmark', 'fa-bars');
+    }
+  });
+
+  // Close the mobile menu when clicking any nav link
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      menuIcon.classList.replace('fa-xmark', 'fa-bars');
+    });
+  });
+}

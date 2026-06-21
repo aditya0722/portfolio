@@ -4,269 +4,395 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Sharma</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Aditya Sharma | Software Developer</title>
+  <meta name="description" content="Portfolio of Aditya Sharma, Software Developer at Daxora Business Consultant.AI. MCA graduate specializing in fullstack web development and database design.">
+  <link rel="stylesheet" href="style.css?v=1.2">
+  
+  <!-- Preconnect and Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <section class="hero-nav">
+  <!-- Pill Header/Navbar -->
+  <header>
     <nav>
-      <span class="text-nav">Aditya Sharma</span>
-      <ul>
-        <a href="#"><li>Home</li></a>
-        <a href="#about"><li>About</li></a>
-        <a href="#myexperiance"><li>Experiance</li></a>
-        <a href="#projects"><li>Projects</li></a>
+      <a href="#" class="text-nav">Aditya</a>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#myexperiance">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="mobile-only"><a href="mailto:sharmaaaditya167@gmail.com" class="btn-nav-contact-mobile">Contact Me</a></li>
       </ul>
-      <button id="theme-toggle">
-        <svg width="30" height="30" id="light-icon">
-          <circle cx="15" cy="15" r="6" fill="currentColor" />
-
-          <line id="ray" stroke="currentColor" stroke-width="2" stroke-linecap="round" x1="15" y1="1" x2="15" y2="4">
-          </line>
-
-          <use href="#ray" transform="rotate(45 15 15)" />
-          <use href="#ray" transform="rotate(90 15 15)" />
-          <use href="#ray" transform="rotate(135 15 15)" />
-          <use href="#ray" transform="rotate(180 15 15)" />
-          <use href="#ray" transform="rotate(225 15 15)" />
-          <use href="#ray" transform="rotate(270 15 15)" />
-          <use href="#ray" transform="rotate(315 15 15)" />
-        </svg>
-        <svg width="30" height="30" id="dark-icon">
-          <path fill="white" d="
-                M 23, 5
-                A 12 12 0 1 0 23, 25
-                A 12 12 0 0 1 23, 5" />
-        </svg>
-      </button>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+          <svg width="24" height="24" id="light-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg width="24" height="24" id="dark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="mailto:sharmaaaditya167@gmail.com" class="btn-nav-contact">Contact Me</a>
+        <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </button>
+      </div>
     </nav>
-    <div class="box">
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-nav">
+    <div class="hero-container">
       <div class="text-box">
-        <h2>Hi I'm <span class="text">Aditya Sharma</span></h2>
-        <h4>Driven Information Technology student with internship experience seeking a frontend developer position. Skilled in 
-          HTML, CSS, JavaScript, and other libraries and Frameworks with a passion for creating visually appealing and user
-          friendly websites. Eager to contribute to a dynamic team and continue learning and growing in the field of web 
-          development. 
-        </h4>
+        <div class="hello-badge">
+          <i class="fa-regular fa-hand-wave"></i> Hello There!
+        </div>
+        <h2>I'm <span class="highlight-underline">Aditya Sharma</span>, Software Developer.</h2>
+        <h4>Driven Software Developer at Daxora Business Consultant.AI with a solid background in fullstack development, database architecture, and building user-centric web applications. Focused on writing clean, scalable code and designing high-fidelity interfaces.</h4>
 
-        <br />
         <div class="icons">
-          <a href="https://www.linkedin.com/in/aditya-sharma167">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" id="linkedin" height="25" width="25">
-            <g id="Layer_2">
-              <g id="Layer_1-2">
-                <rect width="28.87" height="28.87" rx="6.48" ry="6.48" style="fill:#0b86ca"></rect>
-                <path
-                  d="M8 12h3v9.68H8zm1.53-4.81a1.74 1.74 0 1 1-1.74 1.75 1.74 1.74 0 0 1 1.74-1.75M12.92 12h2.89v1.32a3.16 3.16 0 0 1 2.85-1.56c3 0 3.61 2 3.61 4.61v5.31h-3V17c0-1.12 0-2.57-1.56-2.57s-1.8 1.22-1.8 2.48v4.79h-3z"
-                  style="fill:#fff"></path>
+          <a href="https://www.linkedin.com/in/aditya-sharma167" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87 28.87" id="linkedin" height="28" width="28">
+              <g id="Layer_2">
+                <g id="Layer_1-2">
+                  <rect width="28.87" height="28.87" rx="6.48" ry="6.48" style="fill:#0b86ca"></rect>
+                  <path d="M8 12h3v9.68H8zm1.53-4.81a1.74 1.74 0 1 1-1.74 1.75 1.74 1.74 0 0 1 1.74-1.75M12.92 12h2.89v1.32a3.16 3.16 0 0 1 2.85-1.56c3 0 3.61 2 3.61 4.61v5.31h-3V17c0-1.12 0-2.57-1.56-2.57s-1.8 1.22-1.8 2.48v4.79h-3z" style="fill:#fff"></path>
+                </g>
               </g>
-            </g>
-          </svg>
-        </a>
-        <a href="https://github.com/aditya0722">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="github" height="25"
-            width="25">
-            <path fill="#5C6BC0"
-              d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z">
-            </path>
-          </svg>
-        </a>
-        <a href="">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="twitter" height="25"
-            width="25">
-            <path fill="#03A9F4"
-              d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z">
-            </path>
-          </svg>
-        </a>
+            </svg>
+          </a>
+          <a href="https://github.com/aditya0722" target="_blank" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="github" height="28" width="28">
+              <path fill="#5C6BC0" d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"></path>
+            </svg>
+          </a>
+          <a href="https://x.com/AdityaS42916257" target="_blank" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="twitter" height="28" width="28">
+              <path fill="#03A9F4" d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path>
+            </svg>
+          </a>
         </div>
-        <br />
-        <div class="buttons-box">
-          <a class="btn-about" href="mailto:sharmaaaditya167@gmail.com">Contact Me</a>
-          <a class="btn2" href="#projects">view My Projects</a>
-        </div>
-      </div>
-      <img src="cod.png" height="400" width="500" />
-
-
-    </div>
-
-
-  </section>
-  <srction class="about-section" id="about">
-    <div class="about">
-      <div class="box">
-        <img src="about1.png" class="about-img" height="400" width="400" />
-        <div class="about-content">
-          <div class="text-box">
-            <h2>About Me</h2>
-            <h4>Hello! I'm Aditya Sharma, a Fullstack Developer and Designer with a passion for creating beautiful and
-              functional web applications. I specialize in frontend and backend technologies, and I'm always looking for
-              new challenges to enhance my skills.</h4>
-          </div>
-          <div class="skills">
-            <h3>Skills</h3>
-            <ul>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>React, Node.js, Express.js</li>
-              <li>MongoDB, MySQL</li>
-              <li>Responsive Web Design</li>
-            </ul>
-          </div>
-          <div class="social-media">
-            <a href="https://www.linkedin.com/in/aditya-sharma167/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/aditya0722" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-facebook"></i></a>
-          </div>
-
-          <div class="actions">
-            <a href="mailto:sharmaaaditya167@gmail.com" class="btn-about">Hire Me</a>
-            <a href="resume.pdf" target="_blank" class="btn2">Download Resume</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </srction>
-  <section id="myexperiance" id="myexperiance">
-    <div class="experience-container">
-      <h2 class="text-ex">My Experience</h2>
-      <br/>
-      <div class="timeline">
         
-  
-        <!-- Experience Item 3 -->
-        <div class="experience-item">
-          <div class="job-title">Web Development Intern</div>
-          <br/>
-          <div class="company">National Institute of Electronics and Information Technology(NIELIT) </div>
-          <div class="duration">Feb 2023 - July 2023</div>
-          <div class="description">
-            Gained experienced in application and database design, with hands-on involvement 
-            in live projects from concept to implementation. Skilled in both relational 
-            and NoSQL databases, creating efficient, user-friendly applications. Expertise 
-            in translating user requirements into technical solutions, with strong 
-            debugging and problem-solving abilities using various tools and techniques.
+        <div class="buttons-box">
+          <a class="btn-primary" href="#projects">
+            <span>View My Projects</span>
+            <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+          <a class="btn-secondary" href="mailto:sharmaaaditya167@gmail.com">Hire Me</a>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper">
+        <div class="hero-img-container">
+          <img src="me.png" alt="Aditya Sharma Portrait">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horizontal Infinite Marquee Skill Banner -->
+  <section class="marquee-container" aria-hidden="true">
+    <div class="marquee-content">
+      <div class="marquee-item"><span>Fullstack Development</span></div>
+      <div class="marquee-item"><span>MERN Stack</span></div>
+      <div class="marquee-item"><span>Database Architecture</span></div>
+      <div class="marquee-item"><span>REST API Design</span></div>
+      <div class="marquee-item"><span>UI/UX Interface Design</span></div>
+      <div class="marquee-item"><span>System Debugging</span></div>
+      <!-- Duplicate content to ensure seamless loop -->
+      <div class="marquee-item"><span>Fullstack Development</span></div>
+      <div class="marquee-item"><span>MERN Stack</span></div>
+      <div class="marquee-item"><span>Database Architecture</span></div>
+      <div class="marquee-item"><span>REST API Design</span></div>
+      <div class="marquee-item"><span>UI/UX Interface Design</span></div>
+      <div class="marquee-item"><span>System Debugging</span></div>
+    </div>
+  </section>
+
+  <!-- Services I Provide -->
+  <section class="services-section" id="services">
+    <div class="services-header">
+      <div class="services-title-area">
+        <span class="section-subtitle">- Services</span>
+        <h2 class="section-title">Services <span class="divider">|</span> <span class="highlight">I Provide</span></h2>
+      </div>
+      <a href="#projects" class="btn-services-cta">
+        <span>View All Projects</span>
+        <span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+    </div>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h3>Web Application Development</h3>
+        <p>Building high-performance, responsive web applications using React, HTML5, CSS3, and JavaScript. From interactive business landing pages to complex dashboards, I deliver pixel-perfect frontend experiences.</p>
+        <a href="#projects" class="service-link">View Projects <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+      <!-- Card 2 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Designing and developing fully native Android & iOS mobile applications using React Native/Expo. Delivering fluid UI animations, offline data persistence, and robust mobile performance to attract your users.</p>
+        <a href="#projects" class="service-link">View Projects <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+      <!-- Card 3 -->
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fa-solid fa-cubes"></i>
+        </div>
+        <h3>Full-Stack & API Solutions</h3>
+        <p>Creating scalable backend services, RESTful APIs, and secure database schemas using Node.js, Express, MongoDB, and MySQL. Seamlessly connecting databases and servers for high-speed operation.</p>
+        <a href="#projects" class="service-link">View Projects <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <!-- Circle Frame -->
+      <div class="about-image-wrapper">
+        <div class="about-circle-frame">
+          <img src="about1.png" alt="Aditya Sharma About Profile Pic" class="about-img">
+        </div>
+      </div>
+      
+      <!-- Content and Stats Grid -->
+      <div class="about-content">
+        <h2>About Me</h2>
+        <h4>Hello! I'm Aditya Sharma, a Software Developer with a deep-seated passion for designing beautiful, human-centric, and highly performant web applications. </h4>
+        <h4>My path spans rigorous academic training in Computer Applications (MCA) combined with hands-on internship experience in real-world application builds. I excel at translating user specifications into optimal database structures and responsive frontend components.</h4>
+        
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">1.5+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Commitment</div>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="resume.pdf" target="_blank" class="btn-primary">
+            <span>Download Resume</span>
+            <span class="icon-circle"><i class="fa-solid fa-download"></i></span>
+          </a>
+          <div class="signature-container">
+            <span class="signature-text">Aditya Sharma</span>
           </div>
         </div>
       </div>
     </div>
-  
   </section>
+
+  <!-- Experience Section -->
+  <section id="myexperiance">
+    <div class="experience-container-horizontal">
+      <div class="experience-header">
+        <span class="section-subtitle">My Journey</span>
+        <h2 class="section-title">My Professional <span class="highlight">Career</span></h2>
+        <p class="section-subtext">A chronological path of my academic background and engineering roles.</p>
+      </div>
+
+      <div class="experience-grid-horizontal">
+        <!-- Card 1 -->
+        <div class="experience-column-card">
+          <div class="experience-node">01</div>
+          <div class="experience-content-horizontal">
+            <h3>MCA Studies</h3>
+            <span class="company-name">Postgraduate Studies</span>
+            <span class="duration-text">2023 - July 2025</span>
+            <p>Built a solid academic foundation in advanced algorithms, database structures, data structures, and modern software engineering methodologies.</p>
+          </div>
+        </div>
+
+        <div class="experience-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Card 2 -->
+        <div class="experience-column-card">
+          <div class="experience-node">02</div>
+          <div class="experience-content-horizontal">
+            <h3>Web Development Intern</h3>
+            <span class="company-name">NIELIT Gangtok</span>
+            <span class="duration-text">Feb 2023 - July 2023 (6 Months)</span>
+            <p>Gained hands-on experience in full-stack development, database optimization, and implementing relational & NoSQL schemas for live projects.</p>
+          </div>
+        </div>
+
+        <div class="experience-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Card 3 -->
+        <div class="experience-column-card">
+          <div class="experience-node">03</div>
+          <div class="experience-content-horizontal">
+            <h3>Software Developer Intern</h3>
+            <span class="company-name">DBC.AI (Daxora)</span>
+            <span class="duration-text">March 2026 - May 2026 (3 Months)</span>
+            <p>Contributed to full-stack web builds using the MERN stack. Designed responsive UI layouts and developed stable RESTful backend API routes.</p>
+          </div>
+        </div>
+
+        <div class="experience-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <!-- Card 4 -->
+        <div class="experience-column-card">
+          <div class="experience-node">04</div>
+          <div class="experience-content-horizontal">
+            <h3>Software Developer</h3>
+            <span class="company-name">DBC.AI (Daxora)</span>
+            <span class="duration-text">June 2026 - Present</span>
+            <p>Leading and implementing robust, scalable backend APIs and high-fidelity frontends. Collaborating with cross-functional engineering teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section class="projects" id="projects">
     <div class="project-container">
-      <h2>My Projects</h2>
-      <br/>
-      <span style="display: flex; gap: 20px;">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
         <div class="project-card">
-          <img src="imgs/ssmss.png" alt="Project Image" class="project-img">
+          <div class="project-image-container">
+            <img src="imgs/ssmss.png" alt="SaaS Community & Property Management Platform Screen Preview">
+            <span class="project-tag">MERN SaaS App</span>
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Community Web APP </h3>
-            <p class="project-description"> A comprehensive MERN-based platform for 
-              community management, featuring user registration, finance, utilities, and a blog, 
-              designed for a seamless, responsive, and scalable user experience. </p>
+            <h3 class="project-title">SaaS Community & Society Management</h3>
+            <p class="project-description">A secure multi-tenant SaaS platform built for residential societies. Features automated billing, secure payment logging, dynamic utility tracking, and interactive community forums. Engineered to support high concurrent user traffic.</p>
             <div class="project-icons">
               <a href="https://github.com/aditya0722/SSMS_Frontend" target="_blank" title="GitHub">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/github.png" alt="GitHub Icon">
+                <i class="fa-brands fa-github"></i> Source Code
               </a>
-              <a href="https://www.ssmss.org.in" target="_blank" title="Live Project">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/external-link.png"
-                  alt="External Link Icon">
+              <a href="https://ssmss.vercel.app/" target="_blank" title="Live Project">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
               </a>
             </div>
           </div>
         </div>
+
+        <!-- Project 2 -->
         <div class="project-card">
-          <img src="imgs/wpr.png" alt="Project Image" class="project-img">
+          <div class="project-image-container">
+            <img src="imgs/wpr.png" alt="Enterprise Weekly Progress & Reporting System Screen Preview">
+            <span class="project-tag">Enterprise Node/SQL</span>
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Weekly Progress Report </h3>
-            <p class="project-description">A secure, database-driven platform for students to 
-              submit, track, and generate reports with an 
-              efficient, user-friendly interface for streamlined reporting.</p>
+            <h3 class="project-title">Enterprise Reporting & Milestone System</h3>
+            <p class="project-description">A secure dashboard for corporate milestone tracking and reporting. Allows users to submit structured updates, auto-generate analytical reports, and export PDF summaries. Built with strict role-based access control and JWT authentication.</p>
             <div class="project-icons">
-              <a href="https://github.com" target="_blank" title="GitHub">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/github.png" alt="GitHub Icon">
+              <a href="https://github.com/aditya0722" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
               </a>
-              <a href="https://www.iuswpr.in" target="_blank" title="Live Project">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/external-link.png"
-                  alt="External Link Icon">
+              <a href="https://seek-job-psi.vercel.app/" target="_blank" title="Live Project">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
               </a>
             </div>
           </div>
         </div>
+
+        <!-- Project 3 -->
         <div class="project-card">
-          <img src="imgs/petsy.png" alt="Project Image" class="project-img"/>
+          <div class="project-image-container">
+            <img src="imgs/petsy.png" alt="Petsy E-commerce Pet Care Marketplace Screen Preview">
+            <span class="project-tag">React / Node.js</span>
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Petsy Web app </h3>
-            <p class="project-description">A full-stack pet adoption platform with browsing, 
-              profile viewing, and request submission, featuring user authentication, 
-              MongoDB, and a React UI—enhancing MERN stack expertise</p>
+            <h3 class="project-title">Petsy - E-commerce Care Marketplace</h3>
+            <p class="project-description">A high-conversion pet adoption and care marketplace. Integrates dynamic filters, secure database search routines, user profiles, and administrative inventory trackers. Optimized for fast core Web Vitals, speed, and SEO.</p>
             <div class="project-icons">
               <a href="https://github.com/aditya0722/Petsy" target="_blank" title="GitHub">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/github.png" alt="GitHub Icon">
+                <i class="fa-brands fa-github"></i> Source Code
               </a>
               <a href="https://petsy-woad.vercel.app" target="_blank" title="Live Project">
-                <img src="https://img.icons8.com/material-outlined/24/0073e6/external-link.png"
-                  alt="External Link Icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Preview
               </a>
             </div>
           </div>
         </div>
-      </span>
+      </div>
     </div>
   </section>
+
+  <!-- Footer Section -->
   <footer class="footer">
     <div class="footer-container">
-      
       <!-- Quick Links -->
       <div class="footer-section">
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#myexperiance">experiance</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#myexperiance">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
       </div>
-      
+
       <!-- Contact Info -->
       <div class="footer-section">
-        <h4>Contact Us</h4>
+        <h4>Contact Info</h4>
         <p>Lower Sichey, Ranka Road, Golay Dara,</p>
         <p>Gangtok District, Sikkim, India</p>
         <p>Email: sharmaaaditya167@gmail.com</p>
         <p>Phone: +91 6297226844</p>
       </div>
-      
-      <!-- Social Media Icons -->
+
+      <!-- Social Media Links -->
       <div class="footer-section">
         <h4>Follow Me</h4>
-        <div class="social-media">
-          <a href="https://www.linkedin.com/in/aditya-sharma167/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/aditya0722" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/AdityaS42916257" target="_blank"><i class="fab fa-facebook"></i></a>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/aditya-sharma167/" target="_blank" class="footer-social-btn" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/aditya0722" target="_blank" class="footer-social-btn" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/AdityaS42916257" target="_blank" class="footer-social-btn" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
         </div>
       </div>
-      
     </div>
-    
+
     <div class="footer-bottom">
-      &copy; 2024 Aditya Sharma | All Rights Reserved
+      <div>&copy; 2026 Aditya Sharma | All Rights Reserved</div>
+      <div>Designed with Passion</div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=1.2"></script>
 </body>
 
 </html>
